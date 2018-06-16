@@ -9,9 +9,9 @@ class Triangle
 
   def kind
     if x <= 0 || y <= 0 || z <= 0
-      raise TriangleError 
-    end 
-    
+      raise TriangleError
+    end
+
   if x == y && y == z && x == z
     :equilateral
   elsif x != y && y != z && z != x
