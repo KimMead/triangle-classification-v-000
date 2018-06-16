@@ -8,6 +8,16 @@ class Triangle
   end
 
   def kind
-  end
+  if x == y && y == z && x == z 
+    :equilateral
+  elsif x != y && y != z && z != x 
+    :scalene 
+  else
+    :isosceles
+  end 
+end
+
+class TriangleError < StandardError
+end 
 
 end
